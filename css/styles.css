@@ -1,0 +1,71 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-centered {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+button,
+a {
+  background-color: gray;
+  outline: 0;
+  border: 0;
+}
+
+.button-1 {
+  background-color: rgb(185, 80, 97);
+  padding: 1rem 3rem;
+  border: 2px solid rgb(97, 23, 36);
+  border-radius: 1rem;
+  color: white;
+  transition: padding 250ms ease-in-out, 1000ms background-color 500ms ease-out;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: red;
+  padding: 1.25rem 4rem;
+}
+
+.button-2 {
+  background-color: gray;
+  padding: 2rem 4rem;
+  border-radius: 50vw;
+  color: white;
+  text-decoration: none;
+  transition: background-color 150ms;
+}
+
+.button-2:hover,
+.button-2:focus {
+  background-color: black;
+  color: lightslategray;
+}
+
+.button-3 {
+  background-color: transparent;
+  border: 1px dashed black;
+  padding: 1.25rem 3.5rem;
+  color: black;
+  text-decoration: none;
+  transition: transform 300ms ease-in, background-color 150ms;
+}
+
+.button-3:hover,
+.button-3:focus {
+  transform: translateY(-1rem);
+  background-color: gray;
+  color: white;
+}
