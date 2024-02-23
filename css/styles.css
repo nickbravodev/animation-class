@@ -123,14 +123,15 @@ a {
       transition: transform 250ms ease-out, opacity 350ms ease-out;
     }
 
-    p,
     .card__description {
       transform: translateY(3rem);
-      /* display: none; */
       opacity: 0;
       transition: all 100ms 250ms ease-out;
-      line-clamp: 2;
-      -webkit-line-clamp: 2;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* number of lines to show */
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
 
     &:hover {
@@ -147,7 +148,7 @@ a {
       .card__description {
         transform: translateY(0rem);
         opacity: 1;
-        display: block;
+        /* display: block; */
         transition: all 750ms ease-out;
       }
 
