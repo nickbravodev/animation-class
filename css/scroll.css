@@ -26,26 +26,39 @@ div {
   opacity: 1;
 }
 
-img {
-  width: 100%;
-}
-
 .scroll-watcher {
   position: fixed;
   top: 0;
-  width: 100%;
-  max-width: 100vw;
-  height: 10px;
+  width: 5px;
+  height: 100%;
   z-index: 1000;
-  padding: 0;
   background-color: lime;
-  scale: 0 1;
+  scale: 1 0;
+  transform-origin: top;
   animation: scroll-watcher linear;
   animation-timeline: scroll();
+  padding: 0;
+  max-width: 100vw;
 }
 
 @keyframes scroll-watcher {
   to {
     scale: 1 1;
+  }
+}
+
+img {
+  width: 100%;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+  scale: 0.8;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
   }
 }
