@@ -12,3 +12,6 @@ const observer = new IntersectionObserver((entries) => {
 // Target animated elements
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+const hiddenH2 = document.querySelectorAll("h2");
+hiddenH2.forEach((el) => observer.observe(el));

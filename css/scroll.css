@@ -65,3 +65,16 @@ img {
 .show {
   opacity: 1;
 }
+
+h2 {
+  transform: translateX(-4rem);
+  transition: all 1s;
+
+  &.show {
+    transform: translateX(0);
+  }
+}
+
+.show-heading {
+  transform: translateX(0);
+}
