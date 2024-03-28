@@ -6,13 +6,61 @@
     <title>Homepage!!</title>
   </head>
   <body>
-    <h1>New Page!!</h1>
-    <h2>This page is for really cool things!!</h2>
-    <ul>
-      <li><a href="/button-transitions.html">Button Transitions</a></li>
-      <li><a href="/cards.html">Cards</a></li>
-      <li><a href="/animated-objects.html">Animated Objects</a></li>
-      <li><a href="/scroll.html">Animated Scroll</a></li>
-    </ul>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div>
+          <img src="logo.svg" alt="Logo" />
+        </div>
+        <div>
+          <ul>
+            <li><a href="/button-transitions.html">Button Transitions</a></li>
+            <li><a href="/cards.html">Cards</a></li>
+            <li><a href="/animated-objects.html">Animated Objects</a></li>
+            <li><a href="/scroll.html">Animated Scroll</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section>
+        <h1>New Page!!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores ab totam fugiat, cupiditate saepe quisquam voluptates, adipisci incidunt esse harum. Consequuntur
+          ab quos recusandae architecto, alias illo commodi voluptatibus.
+        </p>
+        <img src="/images/pelican.avif" alt="Just a Pelican" />
+      </section>
+      <!-- Second section -->
+      <section>
+        <h2>This page is for really cool things!!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa alias deserunt sequi vero? Nostrum dicta molestias cum, doloremque rerum dolores laboriosam nihil, a eius,
+          eaque voluptatum repellat quae aliquam ipsa!
+        </p>
+        <img src="" alt="" />
+      </section>
+      <!-- Second section -->
+      <section>
+        <h2><a href="#">This page is for really cool things!!</a></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa alias deserunt sequi vero? Nostrum dicta molestias cum, doloremque rerum dolores laboriosam nihil, a eius,
+          eaque voluptatum repellat quae aliquam ipsa!
+        </p>
+        <h3>Another subheading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda tenetur maiores? Sit officia ducimus itaque maiores quas fugit velit necessitatibus impedit
+          excepturi, quibusdam nesciunt numquam, repudiandae minus, iusto temporibus?
+        </p>
+        <img src="/images/incense.jpg" alt="Bundles of incense" />
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; <span id="copyright"></span> My site. All rights reserved.</p>
+    </footer>
+    <script>
+      document.querySelector("#copyright").textContent = new Date().getFullYear().toString();
+    </script>
   </body>
 </html>
